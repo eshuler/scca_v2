@@ -1,3 +1,115 @@
-<h1>HOME</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+	<!-- ======================== -->
+	<!-- this is the main section -->
+	<!-- ======================== -->
+	<section id="main">
+	
+	<!-- ======================== -->
+	<!--    Member Meeting        -->
+	<!-- ======================== -->
+	<article class="main">
+		<header>
+			<h2 id="headline">General Membership Meetings</h2>
+		</header>
+		<%= image_tag "qsnl_logo.png", :title => "QuakerSteakandLube", :class => "nice" %>
+		<p class='content'>Colorado Region Membership meetings are (generally) held on the 3rd Tuesday of every month at 
+			<b>Quaker Steak and Lube</b> in Westminster.  We eat drink and merrily discuss recent as well as upcoming club activities. Stay involved! 
+			Come meet your fellow racing enthusiasts. It's fun! We hope to see you there.
+	</article>
 
+	<!-- ======================== -->
+	<!--   2012 racing schedule   -->
+	<!-- ======================== -->
+	<article class="main">
+		<header>  
+		<h2 id="headline">2012 Rocky Mountain Division Racing Schedule</h2> 
+	</header>
+	
+	<!-- this is the table -->
+	<table>
+		<tr><th>Event</th><th>Host Region</th><th>Track</th></tr>
+		<tr><td class='ename'>Kick Some New Asphalt</td><td class='host'>Continental Divide</td><td class='track'>Pueblo Motorsports Park</td></tr>
+		<tr><td> </td><td>Sat - Mar 31:</td><td>Reg-CTT-PDX</td></tr>
+		<tr><td> </td><td>Sun - Apr 01:</td><td>Reg-CTT-PDX-DS</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>May Daze</td><td class='host'>Colorado</td><td class='track'>High Plains Raceway</td></tr>
+		<tr><td> </td><td>Sat - Apr 28:</td><td>Reg-CTT-PDX-DS</td></tr>
+		<tr><td> </td><td>Sun - Apr 29:</td><td>Reg-CTT-PDX</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>Rock the Peak</td><td class='host'>Continental Divide</td><td class='track'>Pikes Peak Intl Raceway</td></tr>
+		<tr><td> </td><td>Sat - May 26:</td><td>Reg-Nat</td></tr>
+		<tr><td> </td><td>Sun - May 27:</td><td>Reg-Nat</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>- ?? -</td><td class='host'>Continental Divide + Arizona</td><td class='track'>Pueblo Motorsports Park</td></tr>
+		<tr><td> </td><td>Sat - Jun 16:</td><td>Nat</td></tr>
+		<tr><td> </td><td>Sun - Jun 17:</td><td>Nat</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>The Freedom Sprints</td><td class='host'>Colorado</td><td class='track'>High Plains Raceway</td></tr>
+		<tr><td> </td><td>Sat - Jun 30:</td><td>Nat</td></tr>
+		<tr><td> </td><td>Sun - Jul 01:</td><td>Nat - Super Tour</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>It&apos;s Miller Time</td><td class='host'>Continental Divide</td><td class='track'>Pikes Peak Intl Raceway</td></tr>
+		<tr><td> </td><td>Sat - Jul 21:</td><td>Reg-CTT-PDX</td></tr>
+		<tr><td> </td><td>Sun - Jul 22:</td><td>Reg-CTT-PDX</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>The Great Salt Race</td><td class='host'>Utah</td><td class='track'>Miller Motorsports Park</td></tr>
+		<tr><td> </td><td>Sat - Aug 04:</td><td>Reg-Nat</td></tr>
+		<tr><td> </td><td>Sun - Aug 05:</td><td>Reg-Nat</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>- ?? -</td><td class='host'>Colorado</td><td class='track'>High Plains Raceway</td></tr>
+		<tr><td> </td><td>Sat - Aug 18:</td><td>Reg-CTT-PDX</td></tr>
+		<tr><td> </td><td>Sun - Aug 19:</td><td>Reg-CTT-PDX</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>The Last Chance Rationals</td><td class='host'>Colorado</td><td class='track'>High Plains Raceway</td></tr>
+		<tr><td> </td><td>Sat - Sep 01:</td><td>Reg-Nat</td></tr>
+		<tr><td> </td><td>Sun - Sep 02:</td><td>Reg-Nat</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td class='ename'>It&apos;s The Great Pumpkin</td><td class='host'>Continental Divide</td><td class='track'>Pueblo Motorsports Park</td></tr>
+		<tr><td> </td><td>Sat - Oct 13:</td><td>Reg-CTT-PDX</td></tr>
+		<tr><td> </td><td>Sun - Oct 14:</td><td>EN-CTT-PDX</td></tr>
+	</table>
+	<hr>
+	<p class="legend">EVENT LEGEND<br />
+	<b>Reg</b> - Regional Club Race<br />
+	<b>Nat</b> - National Club Race<br />
+	<b>DS</b>&nbsp;&nbsp - Drivers School<br />
+	<b>CTT</b> - Club Time Trials<br />
+	<b>PDX</b> - Performance Driving Experience<br />
+	<b>EN</b>&nbsp;&nbsp; - Enduro</p>
+</article>
+
+	<!-- ======================== -->
+	<!--       Join the SCCA      -->
+	<!-- ======================== -->
+ <article class="main">
+	<header> 
+		<h2 id="headline">Sports Car Club of America</h2>
+		<%= link_to image_tag("scca_wheel_med.jpg", :title => "SCCA", :class => "nice"), "http://www.scca.com/join", :target => "blank" %>
+	</header>
+	<p class="content">Membership Includes a subscription to SportsCar magazine, eligibility for all Club participation licenses, 
+		SCCA cloth insignia, SCCA car decal, insurance benefits, and discounts on Club merchandise and other products and services. 
+		Since 1944, the SCCA has championed one mission: to bring motor sports to the masses of American men and women who are passionate 
+		about automobiles, speed and competition. From national championships to regional events, whether professional or amateur, 
+		we exist to organize, support and develop auto racing at every level and provide an outlet for you to get out of the armchair 
+		and into the action. So, whether your passion is auto-crossing, rallying or road racing as a professional or as a weekend warrior, 
+		SCCA wants to help you fuel your passion.<a href="http://www.scca.com/join" target="blank"><u> JOIN TODAY!</u></a>
+	</p>
+	</article> 
+</section>

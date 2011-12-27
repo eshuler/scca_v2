@@ -30,6 +30,7 @@ SccaV2::Application.routes.draw do
   get "pages/results"
   get "pages/about"
   get "pages/privacy"
+  get "pages/admin"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -119,4 +119,7 @@ class PagesController < ApplicationController
     @pagetitle = 'Privacy Statement'
   end
   
+  def admin
+    @pagetitle = 'admin page'
+  end
 end
