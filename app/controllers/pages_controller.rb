@@ -114,4 +114,9 @@ class PagesController < ApplicationController
   def allstore
     @pagetitle = 'CO Region Store'
   end
+  
+  def privacy
+    @pagetitle = 'Privacy Statement'
+  end
+  
 end
