@@ -1,0 +1,31 @@
+<h1>CO Region Traveling and Division Awards</h1>
+
+<table id="editawards">
+  <tr>
+    <th>Id</th>
+    <th>Award</th>
+    <th>Description</th>
+    <th>Code</th>
+    <!-- ><th>Comments</th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @awards.each do |award| %>
+  <tr>
+    <td class="narrow"><%= award.id %></td>
+    <td class="wide"><%= award.awardname %></td>
+    <td class="wide"><%= award.description %></td>
+    <td class="narrow"><%= award.awardcode %></td>
+    <!-- ><td style="width:100px"><%= award.comments %></td> -->
+    <td class="button"><%= link_to 'Show', award %></td>
+    <td class="button"><%= link_to 'Edit', edit_award_path(award) %></td>
+    <td class="button"><%= link_to 'Destroy', award, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Award', new_award_path %>

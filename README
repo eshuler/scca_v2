@@ -259,3 +259,8 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+
+
+database generators:
+rails g scaffold Award id:integer awardname:string	description:string awardcode:string	comments:text
+rails g scaffold Recipient id:integer award_id:integer year:integer name:string comments:text

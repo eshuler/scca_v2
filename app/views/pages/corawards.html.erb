@@ -1,0 +1,30 @@
+<!-- ====================== -->
+<!--      Awards page       -->
+<!-- ====================== -->
+<article class="main">
+	<header> 
+		<h2 id="headline">Regional and Divisional Traveling Awards and Major Year End Awards</h2>
+	</header>
+	<p class="content">
+		Awards are presented annually at the year end banquet. Depending on the award, 
+		recipients are selected either by the Colorado Region Board. The Colorado Region Board of Directors 
+		welcomes your input and suggestions for future recipients! Please email comments to your board members.</p>
+</article>
+
+<% @awards.each do |award| %>
+<article class="main">
+	<header> 
+		<h2 id="headline"><%= award.awardname %></h2>
+	</header>
+		<span class="content"><%= award.description %></span><br/><br/>
+		<span class="content"><%= award.comments %></span>
+			<hr>
+				<span class="lists"><b>Year - Recipient</b></span><br/>
+			<% award.recipients.each do |r| %>
+				<span class="lists">
+					<%= r.year %> - <%= r.name %><br/>
+				</span>
+			<% end%>
+		</p>
+	</article>
+<% end %>

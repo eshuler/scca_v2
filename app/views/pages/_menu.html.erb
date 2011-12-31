@@ -3,7 +3,7 @@
 	<%= link_to image_tag("new_coregion_banner.png", :title => "", :class => ""), {:controller => 'pages', :action => 'home'} %>
 	<nav>
 		<table>
-			<tr>
+			<tr><!-- items in this table are listed by row.  this is the heading row -->
 				<th>club info</th><th>club racing</th><th>other</th><th>events</th><th>volunteers</th><th>talk</th><th>store</th>
 			</tr>
 			<tr>
@@ -20,7 +20,7 @@
 				<td><%= link_to 'rules, forms', {:controller => 'pages', :action => 'rulesforms' } %></td> <!-- club racing 2 -->
 				<td><%= link_to 'rally cross', {:controller => 'pages', :action => 'rallycross'} %></td> <!-- other 2 -->
 				<td><%= link_to 'registration', {:controller => 'pages', :action => 'registration'} %></td> <!-- schedule 2 -->
-				<td><%= link_to 'rm div awards', {:controller => 'pages', :action => 'awards'} %></td> <!-- volunteers 2 -->
+				<td><%= link_to 'awards', {:controller => 'pages', :action => 'corawards'} %></td> <!-- volunteers 2 -->
 				<td><%= link_to 'region forums', {:controller => 'pages', :action => 'forums'} %></td> <!-- talk 2 -->
 				<td><%= link_to 'hats', {:controller => 'pages', :action => 'hats'} %></td> <!-- store 1 -->
 			</tr>
@@ -37,7 +37,7 @@
 				<td><%= link_to 'region meetings', {:controller => 'pages', :action => 'meetings'} %></td> <!-- club info 4 -->
 				<td><%= link_to 'event results', {:controller => 'pages', :action => 'results'} %></td> <!-- club racing 4 -->
 				<td><%= link_to 'p. d. x.', {:controller => 'pages', :action => 'pdx'} %></td> <!-- other 4 -->
-				<td><%= link_to 'rm div tracks', {:controller => 'pages', :action => 'tracks'} %></td> <!-- schedule 4 -->
+				<td><%= link_to 'division tracks', {:controller => 'pages', :action => 'tracks'} %></td> <!-- schedule 4 -->
 				<td><%= link_to 'specialties', {:controller => 'pages', :action => 'specialties'} %></td> <!-- volunteers 4 -->
 				<td><%= link_to 'rss feed', {:controller => 'pages', :action => 'rssfeed'} %></td> <!-- talk 4 -->
 				<td><%= link_to 'all', {:controller => 'pages', :action => 'allstore'} %></td> <!-- store 1 -->

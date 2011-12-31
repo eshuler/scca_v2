@@ -1,0 +1,30 @@
+2	1982	Bob Stehlik
+2	1983	Pete Gilbert
+2	1984	Jeanne Marnoch
+2	1985	Susan Clark
+2	1986	Larry and Peggy Hawley
+2	1987	Ila Wilson
+2	1988	Clay Bean
+2	1989	Brenda Brostrom
+2	1990	Bill Morley
+2	1991	Gloria Torpy
+2	1992	Darrell Burtis
+2	1993	Ron Leonard
+2	1994	Celeste Fritz
+2	1995	Monte and Maria Wilson
+2	1996	Teri Massey, Brenda Daniels and Mark Gundell
+2	1997	Sharon Agun and Noelle Pascal
+2	1998	Nancy Foster and Pam Raitz-Rocho
+2	1999	William Bradley
+2	2000	Stan "The Man" Jochim
+2	2001	Bill Pichardo
+2	2002	Nancy Foster
+2	2003	Rusty Clayton
+2	2004	Kevin Carter
+2	2005	Barbara and Larry Conrad
+2	2006	Grayson Brumfield
+2	2007	Shellee Peterson
+2	2008	Ann Hickey
+2	2009	Ed Shuler
+2	2010	Ed Kajko
+2	2011	William Carter

@@ -1,0 +1,36 @@
+h1 {
+	color:red;
+}
+
+.bigspace {
+	background:#FFF;
+}
+
+table#editawards {
+	border-collapse:collapse;
+	font-size:90%;
+	border-spacing:0px;
+}
+
+th {
+	color:#CCC;
+	font-family: "Arial Black", "MS Trebuchet", sans-serif;
+	text-align:center;
+	font-size:90%;
+	width:auto;
+	background-color:#000;
+	padding:0px;
+	margin:0px;
+}
+
+td.narrow {
+	width:40px;
+}
+
+td.wide {
+	width:350px;
+}
+
+td.button {
+	width:40px;
+}

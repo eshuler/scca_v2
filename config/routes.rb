@@ -1,37 +1,44 @@
 SccaV2::Application.routes.draw do
   
-  # get "pages/home"
-  # get "pages/getstarted"
-  # get "pages/solo"
-  # get "pages/contacts"
-  # get "pages/regionboard"
-  # get "pages/bylaws"
-  # get "pages/meetings"
-  # get "pages/rulesforms"
-  # get "pages/rallycross"
-  # get "pages/raceofficials"
-  # get "pages/timetrials"
-  # get "pages/pdx"
-  # get "pages/schedule"
-  # get "pages/registration"
-  # get "pages/spectators"
-  # get "pages/tracks"
-  # get "pages/vip"
-  # get "pages/awards"
-  # get "pages/rmsidewinders"
-  # get "pages/specialties"
-  # get "pages/emailnotification"
-  # get "pages/forums"
-  # get "pages/redline"
-  # get "pages/rssfeed"
-  # get "pages/clothing"
-  # get "pages/hats"
-  # get "pages/bottles"
-  # get "pages/allstore"
-  # get "pages/results"
-  # get "pages/about"
-  # get "pages/privacy"
-  # get "pages/admin"
+  resources :recipients
+
+  resources :awards do
+    resources :recipients
+  end
+  
+  # individual get paths for the pages controller
+  get "pages/about"
+  get "pages/admin"
+  get "pages/allstore"
+  get "pages/bottles"
+  get "pages/bylaws"
+  get "pages/clothing"
+  get "pages/contacts"
+  get "pages/corawards"
+  get "pages/emailnotification"
+  get "pages/forums"
+  get "pages/getstarted"
+  get "pages/hats"
+  get "pages/home"
+  get "pages/meetings"
+  get "pages/pdx"
+  get "pages/privacy"
+  get "pages/raceofficials"
+  get "pages/rallycross"
+  get "pages/redline"
+  get "pages/regionboard"
+  get "pages/registration"
+  get "pages/results"
+  get "pages/rmsidewinders"
+  get "pages/rssfeed"
+  get "pages/rulesforms"
+  get "pages/schedule"
+  get "pages/solo"
+  get "pages/specialties"
+  get "pages/spectators"
+  get "pages/timetrials"
+  get "pages/tracks"
+  get "pages/vip"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -88,5 +95,5 @@ SccaV2::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  match ':controller(/:action(/:id(.:format)))'
+  # match ':controller(/:action(/:id(.:format)))'
 end

@@ -1,34 +1,65 @@
 class PagesController < ApplicationController
-  def home
-    @pagetitle = 'ColoradoSCCA Home Page'
+
+  
+  def admin
+    @pagetitle = 'admin page'
   end
 
+  def allstore
+    @pagetitle = 'CO Region Store'
+  end
+  
+  def bottles
+    @pagetitle = 'Bottles Store'
+  end
+  
+  def bylaws
+    @pagetitle = 'Colorado Region Bylaws'
+  end
+
+  def clothing
+    @pagetitle = 'Clothing Store'
+  end
+  
   def contacts
     @pagetitle = 'Important Contacts Page'
   end
 
-  def regionboard
-    @pagetitle = 'Colorado Region Board of Directors'
+  def corawards
+    @pagetitle = 'Division Awards Page'
+    @awards = Award.all
+  end
+  
+  def emailnotification
+    @pagetitle = 'Email Notification Page'
+  end
+  
+  def forums
+    @pagetitle = 'ColoradoSCCA Forum Page'
+  end
+  
+  def getstarted
+    @pagetitle = 'How to get started'
   end
 
-  def bylaws
-    @pagetitle = 'Colorado Region Bylaws'
+  def hats
+    @pagetitle = 'Hats Store'
+  end
+  
+  def home
+    @pagetitle = 'ColoradoSCCA Home Page'
   end
 
   def meetings
     @pagetitle = 'General Membership and BoD Meeting Info'
   end
 
-  def getstarted
-    @pagetitle = 'How to get started'
+  def pdx
+    @pagetitle = 'Porformance Driving Experiance'
   end
-
-  def solo
-    @pagetitle = 'SOLO (Autocross) Page'
-  end
-
-  def tracks
-    @pagetitle = 'Rocky Mountain Division Race Tracks'
+  
+  def privacy
+    @pagetitle = 'Privacy Statement'
   end
   
   def rallycross
@@ -47,48 +78,16 @@ class PagesController < ApplicationController
     @pagetitle = 'Race Officials Page'
   end
   
-  def timetrials
-    @pagetitle = 'Time trials Page'
+  def regionboard
+    @pagetitle = 'Colorado Region Board of Directors'
   end
-  
-  def pdx
-    @pagetitle = 'Porformance Driving Experiance'
-  end
-  
-  def schedule
-    @pagetitle = 'Schedule of Evenst'
-  end
-  
+
   def registration
     @pagetitle = 'Registration Page'
   end
   
-  def spectators
-    @pagetitle = 'Spectators Page'
-  end
-  
-  def vip
-    @pagetitle = 'Volunteer Incentive Page'
-  end
-  
-  def awards
-    @pagetitle = 'Division Awards Page'
-  end
-  
   def rmsidewinders
     @pagetitle = 'Rocky Mountain Sidewinders'
-  end
-  
-  def specialties
-    @pagetitle = 'Volunteer Specialties'
-  end
-  
-  def emailnotification
-    @pagetitle = 'Email Notification Page'
-  end
-  
-  def forums
-    @pagetitle = 'ColoradoSCCA Forum Page'
   end
   
   def redline
@@ -99,27 +98,32 @@ class PagesController < ApplicationController
     @pagetitle = 'RSS feed page'
   end
   
-  def clothing
-    @pagetitle = 'Clothing Store'
+  def specialties
+    @pagetitle = 'Volunteer Specialties'
   end
   
-  def hats
-    @pagetitle = 'Hats Store'
+  def solo
+    @pagetitle = 'SOLO (Autocross) Page'
+  end
+
+  def schedule
+    @pagetitle = 'Schedule of Evenst'
   end
   
-  def bottles
-    @pagetitle = 'Bottles Store'
+  def spectators
+    @pagetitle = 'Spectators Page'
   end
   
-  def allstore
-    @pagetitle = 'CO Region Store'
+  def tracks
+    @pagetitle = 'Rocky Mountain Division Race Tracks'
   end
   
-  def privacy
-    @pagetitle = 'Privacy Statement'
+  def timetrials
+    @pagetitle = 'Time trials Page'
   end
   
-  def admin
-    @pagetitle = 'admin page'
+  def vip
+    @pagetitle = 'Volunteer Incentive Page'
   end
+  
 end

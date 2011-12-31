@@ -1,0 +1,48 @@
+3	1964	Bud Neumeister
+3	1965	Bud Rhodes
+3	1966	Gordon "Duck" Waddle
+3	1967	Harvey Staab
+3	1968	Bob Marshall
+3	1969	Bill Randle
+3	1970	Jim Warren
+3	1971	Ron Hunter
+3	1972	June Clark
+3	1973	David Pearson
+3	1974	Ted Clark
+3	1975	Alex Keller
+3	1976	Danny Collins
+3	1977	Harvey Frank
+3	1978	1978 Race Workers
+3	1979	Phil J. Shuey
+3	1980	Chuck Hyatt
+3	1981	Jeanne Marnoch
+3	1982	Bill McCammon
+3	1983	Tom Birkness
+3	1984	Jim Christian
+3	1985	Steve Depoyster
+3	1986	E. B. Liddle
+3	1987	Grayson Brumfield
+3	1988	Bob Urich
+3	1989	Ron Doyle
+3	1990	Hank and Marilyn Morgan
+3	1991	Ray LaRue
+3	1992	Dale Buckley
+3	1993	Nancy Foster
+3	1994	Kathy Michalski
+3	1995	Greg Ramsay
+3	1996	Jim Nelson
+3	1997	Bob "Papa" Rocho
+3	1998	Mark Zarlengo
+3	1999	Jerry Lee Oleson
+3	2000	Shannon Sweeney
+3	2001	Jeff Winter
+3	2002	Bill Bradford
+3	2003	J. D. McDermott
+3	2004	Steve Ott
+3	2005	Kevin Carter
+3	2006	Don Shaw
+3	2007	Dave Ott
+3	2008	Pat Holmes
+3	2009	Grant Barclay
+3	2010	Mark Franklin
+3	2011	Denise Longwell
