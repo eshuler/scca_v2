@@ -1,15 +1,41 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-/* coloradoscca css */
+/* =============== */
+/*    variables    */
+/* =============== */
+$nav-color:#CCC;
+$grad-start:#008000;
+$grad-stop:#8CC63F;
+
+/* =============== */
+/*      mixins     */
+/* =============== */
+@mixin rounded-corners($radius:5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin bkgradient {
+	background-image: -moz-linear-gradient(top, $grad-start, $grad-stop );
+	background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, $grad-start), color-stop(1, $grad-stop) );
+	background-image: linear-gradient(top, $grad-start, $grad-stop);
+}
+
+@mixin hdline-gradient {
+	background-image: -moz-linear-gradient(top, #7F7F7F, #E6E6E6 );
+	background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #7F7F7F), color-stop(1, #E6E6E6) );
+	background-image: linear-gradient(top, #7F7F7F, #E6E6E6);
+}
+
+/* ===================== */
+/*   coloradoscca css    */
+/* ===================== */
+
 * {
 	margin:0px 0px;
 }
 
 body {
-	/*background-image: -moz-linear-gradient(top, #008000, #008000 );
-	background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #008000), color-stop(1, #008000) );
-	background-image: linear-gradient(top, #008000, #008000);*/
+	@include bkgradient;
 	width:1010px;
 	margin:15px auto;
 	font-family: Arial, "MS Trebuchet", sans-serif;
@@ -32,49 +58,37 @@ p.legend {
 	line-height:1em;
 }
 
+.lists {
+	padding:0px;
+	line-height:0.6em;
+	font-size:70%;
+	color:#444;
+}
+
 header#page_header {
+	@include rounded-corners;
 	width:1000px;
 	text-align:left;
 	background-color:#FFF;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border:2px solid #000;
-}
-
-header#page_header a {
 	margin:0px;
 	padding:0px;
-	/*border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;*/
-}
-
-header#page_header img {
-	margin:0px;
-	padding:0px;
-	/*border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;*/
-}
-
-header#page_header table {
-	background-image: -moz-linear-gradient(top, #8CC63F, #8CC63F );
-	background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #8CC63F), color-stop(1, #8CC63F) );
-	background-image: linear-gradient(top, #8CC63F, #8CC63F);
 	
-	/*background-color:#9AFF8C;*/
-	border-collapse:collapse;
-	font-size:90%;
-	border-spacing:0px;
+	table {
+		@include bkgradient;
+		/*background-color:#9AFF8C;*/
+		border-collapse:collapse;
+		font-size:90%;
+		border-spacing:0px;
+	}
 }
 
 nav th {
-	color:#CCC;
+	color:$nav-color;
 	font-family: "Arial Black", "MS Trebuchet", sans-serif;
 	text-align:center;
 	font-size:90%;
-	width:143px;
+	width:150px;
 	background-color:#000;
 	padding:0px;
 	margin:0px;
@@ -95,61 +109,37 @@ nav td a:hover, a:focus {
 	text-align:center;
 	text-decoration: none;
 	border:1px solid white;
-	padding:0 10px 0 10px;
-}
-
-header#page_footer nav ul {
-	background-color:#3C3;
-	list-style: none;
-	font-family: "Century Gothic", "MS Trebuchet", sans-serif;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-footer#page_footer nav ul li {
-	padding:1px;
-	margin: 0 20px 0 0;
-	display:inline;
 }
 
 #headline {
+	@include rounded-corners;
+	@include hdline-gradient;
+	/*background-color:#9AFF8C;*/
 	text-align:left;
 	display:block;
 	font-family: "Arial", "MS Trebuchet", sans-serif;
-
-	background-image: -moz-linear-gradient(top, #7F7F7F, #E6E6E6 );
-	background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #7F7F7F), color-stop(1, #E6E6E6) );
-	background-image: linear-gradient(top, #7F7F7F, #E6E6E6);
-	
-	/*background-color:#9AFF8C;*/
 	font-size:100%;
 	color:#000;
 	margin-top:3px;
 	padding:3px 0px 3px 5px;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border:1px solid black;
 }
 
 section#main {
+	@include rounded-corners;
 	margin:5px 3px;
 	float: left;
 	width: 735px;
 	background-color:#FFF;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
 
-section#main aside {
-	float: right;
-	width: 35%;
-	margin-left: 5%;
-	font-size: 20px;
-	line-height: 40px;
-	border:1px solid #F90;
+	aside {
+		float: right;
+		width: 35%;
+		margin-left: 5%;
+		font-size: 20px;
+		line-height: 40px;
+		border:1px solid #F90;
+	}
 }
 
 #main td {
@@ -157,13 +147,11 @@ section#main aside {
 	width:155px;
 	font-size:70%;
 	text-align:left;
-}
 
-#main th {
-	color:#000;
-	width:150px;
-	font-size:70%;
-	text-align:left;
+	th {
+		color:$nav-color;
+		width:150px;
+	}
 }
 
 .ename {
@@ -180,12 +168,10 @@ section#main aside {
 }
 
 article.main {
+	@include rounded-corners;
 	margin:5px 5px;
 	padding:1px 5px;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border:1px dashed #CCC;
+	border:1px dashed $nav-color;
 }
 
 article img {
@@ -195,37 +181,39 @@ article img {
 }
 
 section#sidebar {
+	@include rounded-corners;
 	margin:5px 1px;
 	float: left;
 	width: 260px;
 	background-color:#FFF;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+
+	img {
+		border:1px solid #000;
+	}
+
+	img.skipborder {
+		border:1px solid #FFF;
+	}
 }
 
-section#sidebar img {
-	border:1px solid #000;
-}
-
-section#sidebar img {
-	border:1px solid #000;
-}
-
-section#sidebar img.skipborder {
-	border:1px solid #FFF;
-}
-
-footer#page_footer{
+footer#page_footer {
+	@include rounded-corners;
+	font-family: "Century Gothic", "MS Trebuchet", sans-serif;
 	clear: both;
 	width: 1000px;
 	color:#000;
 	display: block;
 	text-align: center;
 	font-size:80%;
-	background-color:#CCC;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
+	background-color:$nav-color;
 
+	nav ul {
+		list-style: none;
+	}
+	
+ 	nav li {
+		padding:1px;
+		margin: 0 20px 0 0;
+		display:inline;
+	}
+}

@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :id %><br />
-    <%= f.number_field :id %>
+    <%= f.number_field :id, :size => 10 %>
   </div>
   <div class="field">
     <%= f.label :award_id %><br />
-    <%= f.number_field :award_id %>
+    <%= f.number_field :award_id, :size => 10  %>
   </div>
   <div class="field">
     <%= f.label :year %><br />
-    <%= f.number_field :year %>
+    <%= f.number_field :year, :size => 10 %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :size => 130 %>
   </div>
   <div class="field">
     <%= f.label :comments %><br />
-    <%= f.text_area :comments %>
+    <%= f.text_area :comments, :size => "60x20", :class =>'bigspace' %>
   </div>
   <div class="actions">
     <%= f.submit %>
